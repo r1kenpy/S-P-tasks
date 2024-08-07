@@ -1,6 +1,6 @@
 class JellyBean:
 
-    def __init__(self, flavor='') -> None:
+    def __init__(self, flavor):
         self.__check_flavor(flavor)
         self.__flavor = flavor
 
@@ -60,14 +60,9 @@ class Dessert(JellyBean):
         self.__name = name
 
     def is_healthy(self):
-        if 1 < self.__calories < 200:
-            return True
-        return False
+        return 1 < self.__calories < 200
 
     def is_delicious(self):
         if self.flavor == 'black licorice':
             return False
         return True
-
-
-desert = JellyBean()

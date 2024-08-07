@@ -1,16 +1,3 @@
-def is_palindrom(text=None):
-    if text is None:
-        return False
-    text = str(text)
-    for i in text:
-        if not i.isalnum():
-            text = text.replace(i, '')
-    return text.lower() == text[::-1].lower()
-
-
-# or
-
-
 def is_palindrome_two_pointers(text=None):
     if text is None:
         return False
