@@ -1,4 +1,4 @@
-def is_palindrome_two_pointers(text=None):
+def is_palindrome(text=None):
     if text is None:
         return False
     text = str(text)
